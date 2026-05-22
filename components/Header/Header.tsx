@@ -1,10 +1,11 @@
 import Link from 'next/link'
+import css from './Header.module.css'
 
 const Header = () => {
   return (
     <header>
       <nav>
-        <ul>
+        <ul className={css.list}>
           <li>
             <Link href='/'>Home</Link>
           </li>
