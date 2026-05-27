@@ -12,3 +12,11 @@ export interface ResponseNoteList {
   notes: ResponseNoteItem[]
   total: number
 }
+
+export interface ResponseCategory {
+  id: string
+  name: string
+  description: string
+  createdAt: string
+  updatedAt: string
+}
