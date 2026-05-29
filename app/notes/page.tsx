@@ -35,6 +35,7 @@
 
 import { getNotes } from '@/lib/api'
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
 
 const Notes = async () => {
   // useEffect(() => {
@@ -45,20 +46,21 @@ const Notes = async () => {
   //   fetchNotes()
   // }, [])
 
-  const res = await getNotes()
-  console.log('res', res)
+  // const res = await getNotes()
+  // console.log('res', res)
 
-  return (
-    <div>
-      <h2>Note list</h2>
-      <br />
-      {res?.notes.map((note) => (
-        <li key={note.id}>
-          <Link href={`/notes/${note.id}`}>{note.title}</Link>
-        </li>
-      ))}
-    </div>
-  )
+  // return (
+  //   <div>
+  //     <h2>Note list</h2>
+  //     <br />
+  //     {res?.notes.map((note) => (
+  //       <li key={note.id}>
+  //         <Link href={`/notes/${note.id}`}>{note.title}</Link>
+  //       </li>
+  //     ))}
+  //   </div>
+  // )
+  redirect('/notes/filter/all')
 }
 
 export default Notes
