@@ -16,7 +16,10 @@ const Header = () => {
             <Link href='/profile'>Profile</Link>
           </li>
           <li>
-            <Link href='/notes'>Notes</Link>
+            <Link href='/notes/filter/all'>Notes</Link>
+          </li>
+          <li>
+            <Link href='/work'>To work</Link>
           </li>
         </ul>
       </nav>

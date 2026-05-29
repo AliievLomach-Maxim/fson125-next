@@ -1,15 +1,15 @@
-import { getCategories } from '@/lib/api'
-import Link from 'next/link'
+// import { getCategories } from '@/lib/api'
+// import Link from 'next/link'
 
 interface Props {
   children: React.ReactNode
 }
 
 const NotesLayout = async ({ children }: Props) => {
-  const categories = await getCategories()
+  // const categories = await getCategories()
   return (
     <div>
-      <h3>Categories</h3>
+      {/* <h3>Categories</h3>
       <br />
       <ul>
         <li>
@@ -20,7 +20,7 @@ const NotesLayout = async ({ children }: Props) => {
             <Link href={`/notes/filter/${cat.id}`}>{cat.name}</Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
       <br />
       <hr />
       <br />
